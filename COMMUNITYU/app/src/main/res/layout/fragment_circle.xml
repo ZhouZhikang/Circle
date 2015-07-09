@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.zhikangzhou.fragment.CircleFragment"
+    android:foregroundGravity="top"
+    android:gravity="center|top"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#fff5f4f5"
+        android:elevation="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/search_button"
+            android:src="@mipmap/ic_search"
+            android:background="#f5f4f5"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:imeOptions="actionSearch"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8c8c8c"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:hint="搜索"
+            android:textColorHint="#8c8c8c"
+            android:gravity="center_vertical"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/listView_circle"
+        android:footerDividersEnabled="false"
+        android:divider = "#eaeaea"
+        android:dividerHeight="12dp"
+        android:fastScrollEnabled="false"
+        android:padding="20dp"
+        android:clipToPadding="false"
+        android:paddingStart="10dp" />
+
+</LinearLayout>

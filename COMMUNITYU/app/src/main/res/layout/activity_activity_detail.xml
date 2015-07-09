@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffd6005e"
+        android:id="@+id/Title_bar"
+        android:focusableInTouchMode="true"
+        android:elevation="4dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textColor="@color/white"
+            android:id="@+id/activity_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activity_owner"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffffff"
+                android:text="发起者" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="人数"
+                android:id="@+id/tv_aty_count"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="圈子"
+            android:id="@+id/tv_belong"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/activity_description"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffffff"
+            android:text="Description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="确定时间"
+            android:id="@+id/tv_aty_ensuretime"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/Title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:id="@+id/huodong">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="评论"
+            android:id="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#6C6C6C" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:footerDividersEnabled="false"
+        android:divider = "#e5e5e5"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="63dp"
+        android:fastScrollEnabled="false"
+        android:clipToPadding="false"
+        android:id="@+id/listView_comment"
+        android:layout_below="@+id/huodong"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/im_in"
+        android:src="@drawable/plus"
+        android:scaleType="fitXY"
+        android:padding="14dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/Title_bar"
+        android:background="@drawable/ripple3"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="-30dp"
+        android:adjustViewBounds="false" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+
+        <EditText
+            android:id="@+id/activity_comment"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:imeOptions="actionDone"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8c8c8c"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:hint="评论"
+            android:textColorHint="#8c8c8c"
+            android:gravity="center_vertical"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
